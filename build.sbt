@@ -1181,7 +1181,7 @@ lazy val apispecDocs: ProjectMatrix = (projectMatrix in file("docs/apispec-docs"
     settings = commonJsSettings
   )
   .nativePlatform(
-    scalaVersions = List(scala3),
+    scalaVersions = scala2And3Versions,
     settings = commonNativeSettings
   )
   .dependsOn(core, tests % Test)
